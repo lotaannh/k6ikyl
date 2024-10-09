@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do list</title>
+    <!--ül välimus vastavalt tehtud/tegemata-->
+    <style>
+      .completed {
+        text-decoration: line-through;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!--pealkiri-->
+    <h1>To-do list</h1>
+    <!--textbox uute ülesannete jaoks-->
+    <input type="text" id="taskInput" placeholder="Sisesta ülesanne" />
+    <!-- lisa nupp-->
+    <button id="addTaskButton">Lisa</button>
+    <!--alapealkiri-->
+    <h2>Ülesanded</h2>
+    <!--filtreerimise ja sortimise nupud-->
+    <div>
+      <button id="filterAll">Näita Kõiki</button>
+      <button id="filterCompleted">Näita tehtud</button>
+      <button id="filterIncomplete">Näita tegemata</button>
+      <button id="sortTasks">Järjesta tegemata/tehtud põhjal</button>
+    </div>
+    <!--siin on ülesannete list-->
+    <ul id="taskList"></ul>
+
+    <script src="app.js"></script>
+  </body>
+</html>
